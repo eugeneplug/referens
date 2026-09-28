@@ -65,3 +65,17 @@ dialog.is-closing::backdrop { animation:backdrop-out .3s ease both; }
 @media(max-width:1100px){.cycle-layout{gap:30px}.cycle-visual{padding:24px;min-height:460px}.cycle-details .step h3{font-size:24px}.cycle-details .step{gap:15px}.cycle-description{font-size:18px}.component-bottom{align-items:start;flex-direction:column;gap:12px}.component-bottom p{text-align:left}.component-bottom p br{display:none}.object-types{align-items:start;flex-direction:column}.price-orbits{right:-180px}.equipment-price{min-height:470px}}
 @media(max-width:700px){.brand-mark{width:32px;height:35px}.logo{gap:8px}.cycle-layout{grid-template-columns:1fr;gap:30px}.cycle-visual{min-height:400px;padding:24px}.cycle-orbit{max-width:285px}.cycle-caption>span:first-child{font-size:26px}.cycle-description{margin-bottom:20px}.cycle-details .step{padding:24px 0}.cycle-details .step-index{font-size:30px;min-width:34px}.cycle-details .step h3{font-size:23px}.cycle-details .step p{font-size:14px}.cycle-details .step-arrow{width:28px;height:28px}.object-types{padding:20px 0;margin-top:5px}.object-types .tags{gap:7px}.object-types .tags span{font-size:11px;padding:8px}.approach .fact{padding:6px 20px}.approach .facts-grid{gap:28px}.pricing-composition{grid-template-columns:1fr;gap:14px}.equipment-price{min-height:415px;padding:26px;border-radius:20px}.equipment-bottom h3{font-size:32px}.equipment-bottom .price-amount{font-size:64px}.price-orbits{width:310px;height:310px;top:25px;right:-130px}.price-components{gap:14px}.component-price{padding:24px;border-radius:20px;gap:30px}.component-bottom{flex-direction:row;align-items:end;gap:10px}.component-bottom .price-amount{font-size:43px}.component-bottom p{font-size:11px;max-width:110px;text-align:right}.component-bottom p br{display:block}.pricing-bottom{align-items:start;flex-direction:column;padding-top:25px}.pricing-bottom .button{width:100%}}
 @media(prefers-reduced-motion:reduce){.orbit-inner,.orbit-runner,.cycle-core,.price-orbits{animation:none!important}}
+
+/* Original raster logo and a direct, three-stage process layout. */
+.brand-mark{object-fit:contain;width:40px;height:44px}
+footer .brand-mark{filter:brightness(0) saturate(100%) invert(17%) sepia(37%) saturate(2741%) hue-rotate(232deg) brightness(91%) contrast(98%)}
+.cycle-layout{display:block}
+.cycle-description{max-width:680px;margin-bottom:38px}
+.cycle-details .steps{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:32px}
+.cycle-details .step{display:grid;grid-template-columns:1fr auto;gap:24px;padding:26px 0}
+.cycle-details .step-index{grid-column:1;font-size:46px}
+.cycle-details .step>div{grid-column:1/-1;grid-row:2}
+.cycle-details .step-arrow{grid-column:2;grid-row:1}
+.cycle-details .step h3{font-size:26px}
+.cycle-details .step p{max-width:340px}
+@media(max-width:700px){.brand-mark{width:32px;height:35px}.cycle-details .steps{grid-template-columns:1fr;gap:0}.cycle-details .step{grid-template-columns:36px 1fr 28px;gap:16px}.cycle-details .step-index{font-size:30px}.cycle-details .step>div{grid-column:2;grid-row:1}.cycle-details .step-arrow{grid-column:3}.cycle-details .step h3{font-size:23px}}
